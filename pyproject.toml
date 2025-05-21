@@ -10,7 +10,8 @@ readme = "README.md"
 python = "^3.11"
 colorama = "^0.4.6"
 halo = "^0.0.31"
-praw = "^7.7.0"
+# We need the "main" branch of praw, since no release supports prawcore >=3 yet.
+praw = { git = "https://github.com/praw-dev/praw.git", rev = "4385e5dce4ff68a2d4b3379d625e379018135ef0" }
 prettytable = "^3.7.0"
 python-dotenv = "^1.0.0"
 rich = "^13.3.5"
